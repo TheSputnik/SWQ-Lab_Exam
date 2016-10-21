@@ -27,6 +27,7 @@ public class StringStackTest {
 	/**
 	 * check that Elements are removed from stack to avoid memory leaks!
 	 */
+	@Test
 	public void testStringStackContent() {
 
 		s = new StringStack(5);
@@ -54,6 +55,7 @@ public class StringStackTest {
 	 * if all elements are null - true is returned
 	 * if at least one element is found not to be null - false is returned.
 	 */
+	@Test
 	private boolean areAllArrayElementsNull(String[] array) {
 
 		for (String str : array) {
@@ -69,6 +71,7 @@ public class StringStackTest {
 	 * use two asserts - assertTrue to check it's empty - assertFalse to check
 	 * it's not empty
 	 */
+	@Test
 	public void testIsEmpty() {
 		assertTrue(s.isEmpty());
 		s.push("one");
@@ -86,6 +89,7 @@ public class StringStackTest {
 	 * 
 	 * @throws Exception
 	 */
+	@Test
 	public void testPushPop() {
 		fail("not implemented yet!");
 		// TODO: add implementation for this test according to the Javadoc-comment
@@ -97,6 +101,7 @@ public class StringStackTest {
 	 * use pop on empty stack an exception must be "expected" (!) it's not valid
 	 * to use an if else case (!)
 	 */
+	@Test
 	public void testPopEmptyStack() {
 		s.pop(); // !!!
 	}
